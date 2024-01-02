@@ -1,0 +1,18 @@
+<h1>Parent Component</h1>
+in parent :<input type="text" [(ngModel)]="binding" >
+docheck mobile input <input type="text"  [(ngModel)]="newMobile" />
+<button  (click)="onAdd()">add mobile</button>
+<app-child1 [name]="binding">
+</app-child1>
+
+<app-child-oninit  [oninit]="binding" ></app-child-oninit>
+
+<app-child-docheck [mobiles]="mobilesArr" ></app-child-docheck>
+<app-form></app-form>
+<div>
+    <h1>name : {{user.name}}</h1>
+    <h1>email : {{user.email}}</h1>
+    <h1>number : {{user.number}}</h1>
+</div>
+<app-rxjs-library></app-rxjs-library>
+<app-operators></app-operators>

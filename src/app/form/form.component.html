@@ -1,0 +1,22 @@
+<h1>NGRx example</h1>
+<div>
+    <input type="text" #name />
+    <button (click)="updateName(name)" >update</button>
+</div>
+<div>
+    <input type="email"  #email />
+    <button (click)="updateEmail(email)" >update</button>
+</div>
+<div>
+    <input type="number" #number />
+    <button (click)="updateNumber(number)">update</button>
+</div>
+<!-- <div>
+    <p>{{}}</p>
+</div> -->
+<!-- <button (click)="pushArr()">push</button> -->
+<div>
+    <h1>add todo using subject</h1>
+    <input type="text" #addTodoInput>
+    <button (click)="addTodoItem(addTodoInput.value)" >add todo</button>
+</div>
